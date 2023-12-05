@@ -2,6 +2,7 @@
   "name": "redux",
   "version": "0.1.0",
   "private": true,
+  "homepage": "http://thameempk.github.io/todoRedux",
   "dependencies": {
     "@reduxjs/toolkit": "^1.9.7",
     "@testing-library/jest-dom": "^5.17.0",
