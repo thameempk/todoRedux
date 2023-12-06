@@ -27,8 +27,8 @@ function ToDoList() {
                 </div>
                
             ): (
-                <div  key={tasks.id} className='m-3' style={{backgroundColor:"InfoBackground", marginTop:"10px", borderRadius:"20px"}}>
-                <span onClick={()=>dispatch(completed(tasks.id))} style={{fontSize:"20px", fontWeight:"600", textDecoration: tasks.completed ? "line-through" : "none", opacity: tasks.completed ? ".6" : "1"}}>{tasks.title}</span>
+                <div  key={tasks.id} className='m-3' style={{backgroundColor:"InfoBackground", marginTop:"10px", borderRadius:"20px", overflow:"hidden"}}>
+                <span  onClick={()=>dispatch(completed(tasks.id))} style={{fontSize:"20px", fontWeight:"600", textDecoration: tasks.completed ? "line-through" : "none", opacity: tasks.completed ? ".6" : "1"}}>{tasks.title}</span>
                 <MdDelete style={{fontSize:"20px"}} className='m-2' onClick={()=>dispatch(deleteTodo(tasks.id))}/>
                 <FaEdit style={{fontSize:"20px"}} onClick={()=>setEdit(tasks.id)}/>
                 
